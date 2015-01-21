@@ -30,6 +30,19 @@ class Welcome extends Application {
 
         $this->render();
     }
+    
+    function shucks() {
+        //set the pagebody to justone.php
+        $this->data['pagebody'] = 'justone';  
+        
+        //get the targetted resource
+        $res = $this->quotes->get('2');
+        
+        //merge the obtained data
+        $this->data = array_merge($this->data, $res);
+        
+        $this->render();
+    }
 
 }
 
