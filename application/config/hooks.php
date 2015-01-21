@@ -9,8 +9,15 @@
 |	http://codeigniter.com/user_guide/general/hooks.html
 |
 */
-
-
-
+//TODO - patch this up
+/*
+$hook['display_override'] = array(
+                                'class'    => 'LineAndSinkers',
+                                'function' => 'boldCap',
+                                'filename' => 'LineAndSinkers.php',
+                                'filepath' => 'hooks',
+                                'params'   => array('')
+                                );
+*/
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */
